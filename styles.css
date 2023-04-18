@@ -13,8 +13,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  width: 100%;
+  padding: 05px 20px;
+  width: calc(100% - 40px);
   background-color: transparent;
 }
 
@@ -47,35 +47,79 @@ main {
   width: auto;
 }
 
-nav div {
+nav form {
+  display: flex;
   width: 530px;
   border: 01px solid #c5c7c6;
   padding: 10px;
   border-radius: 30px;
 }
 
-nav form {
-  display: flex;
-}
-
-
 nav input {
   background: transparent;
   border: 0px;
   outline: 0px;
-  width: 300px;
+  width: 80%;
   font-size: 16px;
 }
 
+.search-bar {
+  position:relative;
+}
+
 .icon-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   color: #c5c7c6;
   font-size: 20px;
 }
 
+.mic img {
+	height: 23px;
+  width: auto;
+}
+
+.three-dots img {
+	height: 17px;
+  width: auto;
+}
+
+.signin img {
+  height: 17px;
+  width: auto;
+  padding-left: 5px;
+}
+
+nav .signin {
+  display: flex;
+  width: 80px;
+  border: 01px solid #c5c7c6;
+  padding: 7px;
+  border-radius: 30px;
+}
+
+.signin a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 10px;
+}
 
 .video {
   flex: 2;
 	margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video iframe {
+  width: 1215px;
+  height: 675px;
+  max-height: 100vh;
 }
 
 .sidebar {
