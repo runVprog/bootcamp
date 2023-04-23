@@ -107,16 +107,6 @@ nav .signin {
   padding-left: 10px;
 }
 
-.video {
-  flex: 2;
-  margin-right: 20px;
-  margin-top: -120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
 .sidebar {
   flex: 1;
   display: flex;
@@ -142,6 +132,53 @@ nav .signin {
   margin: 10px;
   margin-bottom: 1px;
 }
+
+main .container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .container p {
+  position: absolute;
+  left: 20px;
+  margin-left: 0;
+  margin-top: 475px;
+}
+
+.container {
+  flex: 2;
+  margin-right: 20px;
+  margin-top: -120px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.container p {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.container iframe {
+  margin-right: 20px;
+}
+
+.iframe {
+  flex: 1;
+  margin-right: 0;
+}
+
+.p {
+  margin-top: 0;
+  text-align: left;
+  float: left;
+  margin-left: -100px;
+}
+
 
 .image-container {
   display: flex;
